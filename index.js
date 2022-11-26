@@ -32,3 +32,29 @@ const getDate = () => {
 const onLoad = () => {
     navigator.geolocation.getCurrentPosition(fetchData);
 }
+
+function notifyMe() {
+    // Comprobamos si el navegador soporta las notificaciones
+    if (!("Notification" in window)) {
+      console.log("Este navegador no es compatible con las notificaciones de escritorio");
+    }
+  
+    // Comprobamos si los permisos han sido concedidos anteriormente
+    else if (Notification.permission === "granted") {
+      // Si es correcto, lanzamos una notificación
+      var notification = new Notification("Hola!");
+    }
+  
+    // Si no, pedimos permiso para la notificación
+    else if (Notification.permission !== 'denied' || Notification.permission === "default") {
+      Notification.requestPermission(function (permission) {
+        // Si el usuario nos lo concede, creamos la notificación
+        if (permission === "granted") {
+          var notification = new Notification("Hola!");
+        }
+      });
+    }
+  
+    // Por último, si el usuario ha denegado el permiso, y quieres ser respetuoso, no hay necesidad de molestarlo.
+  }
+  
