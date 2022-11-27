@@ -1,0 +1,57 @@
+body,
+html {
+  height: 100%;
+}
+
+body {
+  background-image: url("fondo.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+#container {
+  padding: 20px;
+  width: 500px;
+  height: 200px;
+  background-color: rgba(255, 255, 255, 0.15);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  align-items: center;
+  text-align: center;
+  justify-items: center;
+}
+#container .header {
+  justify-content: space-between;
+  display: flex;
+  margin-bottom: 30px;
+}
+#container .header .lugar {
+  display: flex;
+}
+#container .header .lugar #localizacion {
+  font-size: 1rem;
+}
+#container .header .lugar img {
+  margin-right: 0.5rem;
+}
+#container .clima {
+  display: inline-flex;
+}
+#container .clima #descripcion {
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+#container .clima img {
+  margin-right: 0.5rem;
+}
+#container #temperatura {
+  font-size: 4rem;
+}/*# sourceMappingURL=index.css.map */
