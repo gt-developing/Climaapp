@@ -1,5 +1,4 @@
-body,
-html {
+body, html {
   height: 100%;
 }
 
@@ -10,6 +9,7 @@ body {
   background-attachment: fixed;
   background-size: cover;
   font-family: Helvetica, Arial, sans-serif;
+  color: black;
   margin: 0;
   padding: 0;
   align-items: center;
@@ -54,4 +54,17 @@ body {
 }
 #container #temperatura {
   font-size: 4rem;
+}
+#container .footer {
+  display: flex;
+  float: right;
+  text-decoration: none;
+  color: black;
+}
+#container .footer img {
+  margin-right: 0.5rem;
+}
+#container .footer :hover {
+  letter-spacing: 1px;
+  transition: 0.5s;
 }/*# sourceMappingURL=index.css.map */
