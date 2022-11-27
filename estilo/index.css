@@ -59,6 +59,7 @@ body {
 #container .footer {
   display: flex;
   float: right;
+  bottom: 0;
   text-decoration: none;
   color: black;
   margin-top: 30px;
